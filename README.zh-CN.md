@@ -62,7 +62,12 @@ semantic-field-namer/
 
 ## 快速启动
 
-### 一条命令启动
+这个项目提供两条启动路线：
+
+- Docker 一键启动
+- 本地开发启动
+
+### 方案 A：Docker 一键启动
 
 ```powershell
 docker compose up --build
@@ -76,7 +81,11 @@ docker compose up --build
 
 如果你希望 Docker 环境里也启用大模型兜底能力，请先把仓库根目录下的 `compose.env.example` 复制成 `.env`，再填入 OpenAI 兼容网关相关变量，然后执行 `docker compose up --build`。
 
-### 1. 启动后端
+### 方案 B：本地开发启动
+
+后端、前端、Qdrant 分开启动。
+
+#### 1. 启动后端
 
 ```powershell
 cd backend
@@ -85,7 +94,7 @@ python -m pip install -r requirements.txt
 python -m uvicorn app.main:app --reload --port 8000
 ```
 
-### 2. 启动前端
+#### 2. 启动前端
 
 ```powershell
 cd frontend
@@ -94,13 +103,13 @@ npm install
 npm run dev
 ```
 
-### 3. 启动 Qdrant
+#### 3. 启动 Qdrant
 
 ```powershell
 docker compose up -d
 ```
 
-### 4. 打开页面
+#### 4. 打开页面
 
 - 前端：`http://127.0.0.1:5173`
 - 后端：`http://127.0.0.1:8000`

@@ -57,7 +57,12 @@ semantic-field-namer/
 
 ## Quick start
 
-### One command startup
+There are two supported ways to run the project:
+
+- Docker one-command startup
+- Local development startup
+
+### Option A — Docker one-command startup
 
 ```powershell
 docker compose up --build
@@ -71,7 +76,11 @@ Then open:
 
 If you want LLM fallback inside Docker, copy `compose.env.example` to `.env` in the repository root and fill in the OpenAI-compatible gateway variables before running `docker compose up --build`.
 
-### 1. Backend
+### Option B — Local development startup
+
+Run backend, frontend, and Qdrant separately.
+
+#### 1. Backend
 
 ```powershell
 cd backend
@@ -80,7 +89,7 @@ python -m pip install -r requirements.txt
 python -m uvicorn app.main:app --reload --port 8000
 ```
 
-### 2. Frontend
+#### 2. Frontend
 
 ```powershell
 cd frontend
@@ -89,13 +98,13 @@ npm install
 npm run dev
 ```
 
-### 3. Qdrant
+#### 3. Qdrant
 
 ```powershell
 docker compose up -d
 ```
 
-### 4. Open the app
+#### 4. Open the app
 
 - Frontend: `http://127.0.0.1:5173`
 - Backend: `http://127.0.0.1:8000`
