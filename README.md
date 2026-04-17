@@ -76,6 +76,8 @@ Then open:
 
 If you want LLM fallback inside Docker, copy `compose.env.example` to `.env` in the repository root and fill in the OpenAI-compatible gateway variables before running `docker compose up --build`.
 
+After startup, you can also open the AI settings page in the UI and create or edit AI sources there. Those settings are persisted in the application database and can be used as the active runtime source without editing container env files again. In normal runtime, the active database source takes precedence over the fallback `.env` source.
+
 ### Option B — Local development startup
 
 Run backend, frontend, and Qdrant separately.
