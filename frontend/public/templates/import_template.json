@@ -1,0 +1,14 @@
+[
+  {
+    "table_name": "user_profile",
+    "column_name": "user_id",
+    "column_comment_zh": "用户编号",
+    "data_type": "bigint"
+  },
+  {
+    "table_name": "user_profile",
+    "column_name": "mobile_no",
+    "column_comment_zh": "联系电话",
+    "data_type": "varchar(64)"
+  }
+]

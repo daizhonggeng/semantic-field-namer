@@ -1,0 +1,4 @@
+t_land_supply_case|geometry_data_source|图形数据来源|varchar(255)
+t_land_supply_case|administrative_division_code|行政区划代码|varchar(255)
+t_land_supply_case|approval_document_no|批准文号|varchar(255)
+t_land_supply_case|land_use|土地用途|varchar(255)

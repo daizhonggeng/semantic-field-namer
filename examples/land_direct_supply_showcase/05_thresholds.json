@@ -1,0 +1,5 @@
+{
+  "lexical_threshold": 0.9,
+  "semantic_score_threshold": 0.82,
+  "semantic_gap_threshold": 0.06
+}

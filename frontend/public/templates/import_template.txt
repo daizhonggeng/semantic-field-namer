@@ -1,0 +1,3 @@
+tablename|columnname|中文注释|datatype
+user_profile|user_id|用户编号|bigint
+user_profile|mobile_no|联系电话|varchar(64)

@@ -1,0 +1,38 @@
+[
+  {
+    "table_name": "t_land_supply_case",
+    "column_name": "centralized_land_supply_batch",
+    "column_comment_zh": "集中供地批次",
+    "data_type": "varchar(255)"
+  },
+  {
+    "table_name": "t_land_supply_case",
+    "column_name": "centralized_land_supply_round",
+    "column_comment_zh": "集中供地轮次",
+    "data_type": "varchar(255)"
+  },
+  {
+    "table_name": "t_land_supply_case",
+    "column_name": "high_quality_competition_result",
+    "column_comment_zh": "高品质竞赛结果",
+    "data_type": "varchar(255)"
+  },
+  {
+    "table_name": "t_land_supply_case",
+    "column_name": "three_major_pilot_industry_name",
+    "column_comment_zh": "三大先导产业名称",
+    "data_type": "varchar(255)"
+  },
+  {
+    "table_name": "t_land_supply_case",
+    "column_name": "six_key_industry_name",
+    "column_comment_zh": "六大重点产业名称",
+    "data_type": "varchar(255)"
+  },
+  {
+    "table_name": "t_land_supply_case",
+    "column_name": "national_economy_industry_medium_category",
+    "column_comment_zh": "国民经济行业分类中类",
+    "data_type": "varchar(255)"
+  }
+]
